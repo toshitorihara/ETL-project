@@ -1,4 +1,8 @@
-# ETL-project
+# ETL Project: Olympic Data
+
+2021-08-07
+
+## Initial Directions
 
 * What your data sources are: 
   * [**Olympic CSV files**](Resources) from Kaggle
