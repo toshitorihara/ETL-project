@@ -1,18 +1,28 @@
 -- Create tables for raw data to be loaded into
 CREATE TABLE events (
-	id INT PRIMARY KEY,
-	athlete_name VARCHAR,
-	athlete_sex VARCHAR,
-	athlete_age INT,
-	athlete_height FLOAT,
-	athlete_weight FLOAT,
+	index INT PRIMARY KEY,
 	noc VARCHAR,
 	year INT,
 	season VARCHAR,
-	city_of_games VARCHAR,
-	sport VARCHAR,
-	event VARCHAR,
-	medal VARCHAR
+	city VARCHAR,	
+	medal VARCHAR	
 );
 
-SELECT * from events
+CREATE TABLE gdp (
+	index INT PRIMARY KEY,
+	noc VARCHAR,
+	year INT,
+	gdp FLOAT
+);
+
+--Query to check successful load
+SELECT * FROM events;
+
+SELECT * FROM gdp;
+
+--Join tables on noc
+SELECT events.index, events.noc, events.year, events.season, gdp.gdp
+FROM events
+INNER JOIN gdp
+ON events.noc = gdp.noc AND events.year = gdp.year
+
