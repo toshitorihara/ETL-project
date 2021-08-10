@@ -3,12 +3,12 @@
 2021-08-09
 
 ## Objective
-* Created `olypmics_db` database in pgAdmin 4 with following tables within:
+* Create `olypmics_db` database in pgAdmin 4 with following tables within:
   * `events` table that contains the columns `noc`, `year`, `season`, `city` and `medal`.
   * `gdp` table that contains the columns `noc`, `year` and `gdp`.
   * `athletes` table that contains the columns `name`, `sex`, `age`, `noc`, `year`, and `sport`.
 
-* In Jupyter Notebook perform all ETL.
+* In Jupyter Notebook to perform all ETL.
 
 * **Extraction**
   * Put each [**CSVs**](Resources) into a pandas DataFrame.
@@ -28,4 +28,4 @@
 
 * **Queries**
 * Join the two tables and select the `noc` and `year` from the `events` and `gdp` table.
-* 
+* Join the `events` and `gdp` tables and query the result of `medal` and `gdp` of Finland in 2016
