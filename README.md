@@ -1,11 +1,11 @@
-# ETL Project: Olympic Data
+# ETL Project: Olympics & GDP Data
 
 2021-08-09
 
 ## Objective
-* Created an `olypmic_db` database in pgAdmin 4 with following tables within:
-  * An `events` table that contains the columns `noc`, `year`, `season`, `city` and `medal`.
-  * A `gdp` table that contains the columns `id`, `country_code`, `year` and `value`.
+* Created `olypmics_db` database in pgAdmin 4 with following tables within:
+  * `events` table that contains the columns `noc`, `year`, `season`, `city` and `medal`.
+  * `gdp` table that contains the columns `noc`, `year` and `gdp`.
 * In Jupyter Notebook perform all ETL.
 
 * **Extraction**
@@ -18,10 +18,10 @@
   * Set index to the previously created primary key.
 
 * **Load**
-  * Create a connection to `olympic_db` database.
+  * Create a connection to `olympics_db` database.
   * Check for a successful connection to the database and confirm that the tables have been created.
   * Append DataFrames to tables. Be sure to use the index set earlier.
 
 * Confirm successful **Load** by querying database.
 
-* Join the two tables and select the `noc` and `year` from the `events` table, `country_code` and `year` from the `gdp` table.
+* Join the two tables and select the `noc` and `year` from the `events` and `gdp` table.
