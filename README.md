@@ -18,10 +18,10 @@
   * Set index to the previously created primary key.
 
 * **Load**
-  * Create a connection to database.
+  * Create a connection to `olympic_db` database.
   * Check for a successful connection to the database and confirm that the tables have been created.
   * Append DataFrames to tables. Be sure to use the index set earlier.
 
 * Confirm successful **Load** by querying database.
 
-* Join the two tables and select the `noc` from the `events` table and `country_code` from the `gdp` table.
+* Join the two tables and select the `noc` and `year` from the `events` table, `country_code` and `year` from the `gdp` table.
