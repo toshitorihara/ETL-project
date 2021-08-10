@@ -15,6 +15,20 @@ CREATE TABLE gdp (
 	gdp FLOAT
 );
 
+CREATE TABLE athletes (
+		index INT PRIMARY KEY,
+		name VARCHAR,
+		sex VARCHAR,
+		age INT,
+		height INT,
+		weight INT,
+		noc VARCHAR,
+		olympic_games VARCHAR,
+		olympic_city VARCHAR,
+		olympic_event VARCHAR,
+		medal VARCHAR
+);
+
 --Query to check successful load
 SELECT * FROM events;
 
