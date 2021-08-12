@@ -27,7 +27,8 @@ CREATE TABLE athletes (
 		height INT,
 		weight INT,
 		noc VARCHAR,
-		olympic_games VARCHAR,
+		year INT,
+		season VARCHAR,
 		olympic_city VARCHAR,
 		olympic_event VARCHAR,
 		medal VARCHAR
@@ -36,7 +37,7 @@ CREATE TABLE athletes (
 
 --Query to check successful load
 SELECT * FROM events;
-
+SELECT * FROM athletes;
 SELECT * FROM gdp;
 
 --Join tables on noc
@@ -44,4 +45,14 @@ SELECT events.index, events.noc, events.year, events.season, gdp.gdp
 FROM events
 INNER JOIN gdp
 ON events.noc = gdp.noc AND events.year = gdp.year
+
+SELECT events.index, events.noc, events.year, events.season, gdp.gdp
+FROM events
+INNER JOIN gdp
+ON events.noc = gdp.noc AND events.year = gdp.year
+
+SELECT athletes.index, athletes.name, athletes.sex, athletes.noc, athletes.year, athletes.season, athletes.medal, gdp.gdp
+FROM athletes
+INNER JOIN gdp
+ON athletes.noc = gdp.noc AND athletes.year = gdp.year
 
