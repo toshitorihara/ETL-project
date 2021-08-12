@@ -8,15 +8,12 @@
   * `gdp` table that contains the columns `noc`, `year` and `gdp`.
   * `athletes` table that contains the columns `name`, `sex`, `age`, `noc`, `year`, and `sport`.
 
-* In Jupyter Notebook to perform all ETL.
-
 ### Extraction
   * Put each [**CSVs from Kaggle**](Resources) into a pandas DataFrame.
 
 ### Transform
   * Copy only the columns needed into a new DataFrame.
   * Rename columns to fit the tables created in the database.
-  * Handle any duplicates. 
   * Set index to the previously created primary key.
 
 ### Load
