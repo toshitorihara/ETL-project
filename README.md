@@ -22,3 +22,5 @@
   * Confirm successful **Load** by querying database.
 
 ![Screenshot_1](Images/Screenshot_1.png)
+![Screenshot_2](Images/Screenshot_2.png)
+![Screenshot_3](Images/Screenshot_3.png)
