@@ -27,7 +27,8 @@ CREATE TABLE athletes (
 		height INT,
 		weight INT,
 		noc VARCHAR,
-		olympic_games VARCHAR,
+		year INT,
+		season VARCHAR,
 		olympic_city VARCHAR,
 		olympic_event VARCHAR,
 		medal VARCHAR
