@@ -1,6 +1,6 @@
 # ETL Project: Olympics & GDP Data
 
-2021-08-09
+2021-08-11
 
 ## Objective
 * Create `olypmics_db` database in pgAdmin 4 with following tables within:
@@ -10,22 +10,17 @@
 
 * In Jupyter Notebook to perform all ETL.
 
-* **Extraction**
-  * Put each [**CSVs**](Resources) into a pandas DataFrame.
+### Extraction
+  * Put each [**CSVs from Kaggle**](Resources) into a pandas DataFrame.
 
-* **Transform**
+### Transform
   * Copy only the columns needed into a new DataFrame.
   * Rename columns to fit the tables created in the database.
   * Handle any duplicates. 
   * Set index to the previously created primary key.
 
-* **Load**
+### Load
   * Create a connection to `olympics_db` database.
   * Check for a successful connection to the database and confirm that the tables have been created.
   * Append DataFrames to tables. Be sure to use the index set earlier.
-
-* Confirm successful **Load** by querying database.
-
-* **Queries**
-* Join the two tables and select the `noc` and `year` from the `events` and `gdp` table.
-* Join the `events` and `gdp` tables and query the result of `medal` and `gdp` of Finland in 2016
+  * Confirm successful **Load** by querying database.
