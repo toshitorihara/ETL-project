@@ -19,5 +19,4 @@
 ### Load
   * Create a connection to `olympics_db` database.
   * Check for a successful connection to the database and confirm that the tables have been created.
-  * Append DataFrames to tables. Be sure to use the index set earlier.
   * Confirm successful **Load** by querying database.
