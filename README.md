@@ -1,4 +1,4 @@
-# ETL using Olympics and GDP Data
+# ETL Analysis of Olympics and GDP Data
 
 2021-08-11
 
@@ -21,6 +21,10 @@
   * Check for a successful connection to the database and confirm that the tables have been created.
   * Confirm successful **Load** by querying database.
 
-![Screenshot_3](Images/Screenshot_3.png)
-![Screenshot_1](Images/Screenshot_1.png)
+## Presentation
+1. **Connect to Local Database** <br>
+![Screenshot_3](Images/Screenshot_3.png) <p>
+2. **olympics.sql** <br>
+![Screenshot_1](Images/Screenshot_1.png) <p>
+3. **Query to Check Successful Load** <br>
 ![Screenshot_2](Images/Screenshot_2.png)
