@@ -1,4 +1,4 @@
-# ETL Analysis of Olympics and GDP Data
+# ETL using Olympics and GDP Data
 
 2021-08-11
 
