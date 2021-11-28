@@ -1,4 +1,4 @@
-# ETL Project: Olympics & GDP Data
+# ETL using Olympics and GDP Data
 
 2021-08-11
 
@@ -24,4 +24,3 @@
 ![Screenshot_3](Images/Screenshot_3.png)
 ![Screenshot_1](Images/Screenshot_1.png)
 ![Screenshot_2](Images/Screenshot_2.png)
-
